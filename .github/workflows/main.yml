@@ -196,7 +196,7 @@ jobs:
       uses: actions/setup-java@v4.2.1
       with:
         distribution: 'temurin'
-        java-version: '21'
+        java-version: '11'  # تغيير من Java 21 إلى Java 11
 
     - name: Flet Build APK
       run: |
@@ -244,4 +244,4 @@ jobs:
         name: ipa-build-artifact
         path: build/ipa
         if-no-files-found: warn
-        overwrite: fals
+        overwrite: false
