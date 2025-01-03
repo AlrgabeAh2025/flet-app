@@ -62,6 +62,7 @@ def main(page: Page):
         page.update()
 
     page.on_route_change = route_change
+    page.add(Text("test"))
     page.go("/")
 
 
